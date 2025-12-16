@@ -1,6 +1,7 @@
 
 import streamlit as st
 import numpy as np
+import joblib
 model = joblib.load("housing_price_model.pkl")
 st.title("House Price Prediction (Lakhs)")
 st.write("Enter the inputs and hit predict to get a estimated price for your house!")
