@@ -15,7 +15,7 @@ st.set_page_config(
 # Load Model
 # --------------------------------------------------
 with open("housing_price_model.pkl", "rb") as file:
-    model = pickle.load(file)
+    model = joblib.load("housing_price_model.pkl")
 
 # --------------------------------------------------
 # Custom CSS
